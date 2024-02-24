@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "mgs-main-fabric",
+  "version": "${version}",
+  "name": "mgs-main-fabric",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/fuby/mgs-main-fabric"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/mgs-main-fabric/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+    ],
+    "main": [
+      {
+        "value": "com.mgs.main.Main",
+        "adapter": "kotlin"
+      }
+    ]
+  },
+  "mixins": [
+    "mgs-main-fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
